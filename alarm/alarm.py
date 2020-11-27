@@ -35,5 +35,5 @@ class Kapp():
 
 
 def register(appID, appPath, ctx):
-    print("register Alarm")
+    print("register " + Kapp.name)
     return Kapp(appID, appPath, ctx)
