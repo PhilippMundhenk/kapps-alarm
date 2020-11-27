@@ -27,7 +27,7 @@ class Kapp():
         if "/res" in path:
             # app resource requested
             return {"code": 200, "content": self.getRes(self.urlToAppPath(path))}
-        elif path.split(appFolder)[1] == "":
+        elif path.split(self.getAppURL())[1] == "":
             # app is started
             return {"code": 200, "content": "<html><h1>Alarm App</h1></html>"}
         else:
